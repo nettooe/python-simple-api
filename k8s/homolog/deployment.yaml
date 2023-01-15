@@ -41,7 +41,7 @@ metadata:
   namespace: python-simple-api-homolog
 spec:
   rules:
-    - host: "foobar.com"
+    - host: "foo.bar.com"
       http:
         paths:
           - pathType: Prefix
