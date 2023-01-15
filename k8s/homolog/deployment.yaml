@@ -39,7 +39,7 @@ metadata:
     #source_url: "git@gitlab.com:kisphp/example.git"
 spec:
   rules:
-    - host: "localhost"
+    - host: "127.0.0.1"
       http:
         paths:
           - path: /
