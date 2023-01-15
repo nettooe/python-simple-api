@@ -26,9 +26,6 @@ metadata:
 spec:
   selector:
     app: python-simple-api
-    run: python-simple-api
   ports:
-  - protocol: TCP
-    port: 80  
-    targetPort: 80
-  type: NodePort
+  - port: 80  
+    targetPort: 8000

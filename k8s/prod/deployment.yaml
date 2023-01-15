@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: python-simple-api
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app: python-simple-api
@@ -22,6 +22,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: python-simple-api
+  namespace: python-simple-api-prod
 spec:
   selector:
     app: python-simple-api
