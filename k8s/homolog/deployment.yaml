@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: python-simple-api
+  name: loadbalancer
   namespace: python-simple-api-homolog
 spec:
   selector:
