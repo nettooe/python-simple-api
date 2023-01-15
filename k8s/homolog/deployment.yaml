@@ -45,7 +45,7 @@ spec:
       http:
         paths:
           - pathType: Prefix
-            path: "/bar"
+            path: "/"
             backend:
               service:
                 name: python-simple-api
