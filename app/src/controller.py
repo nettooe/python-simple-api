@@ -1,5 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
+import socket
+import platform
 
 """
 Este código cria uma classe chamada "RequestHandler" 
@@ -20,10 +22,14 @@ class RequestHandler(BaseHTTPRequestHandler):
        e retorna ambos no corpo da resposta no formato json.
     """
     def do_GET(self):
+
+        print("socket.gethostname() ==> " + socket.gethostname())
+        print("platform.node() ==> " + platform.node())
+
         if self.path.startswith("/hello"):
             id = self.path.split("/")[-1]
             code = self.headers['codigo']
-            message = {"id": id, "codigo": code}
+            message = {"id": id, "codigo": code, "host_response": socket.gethostname()}
             self._send_response(message)
 
 httpd = HTTPServer(('localhost', 8000), RequestHandler)
