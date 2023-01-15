@@ -24,7 +24,7 @@ metadata:
   name: python-simple-api
   namespace: python-simple-api-homolog
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: python-simple-api  
   ports:
