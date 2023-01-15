@@ -27,5 +27,7 @@ spec:
   selector:
     app: python-simple-api
   ports:
-  - port: 80  
+  - protocol: TCP
+    port: 80  
     targetPort: 8000
+  type: LoadBalancer
