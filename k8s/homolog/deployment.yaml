@@ -50,4 +50,4 @@ spec:
               service:
                 name: python-simple-api
                 port:
-                  number: 80
+                  number: 8010
