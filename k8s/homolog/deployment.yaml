@@ -37,11 +37,17 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: basic-ingress
+  name: ingress-wildcard-host
   namespace: python-simple-api-homolog
 spec:
-  defaultBackend:
-    service:
-      name: python-simple-api
-      port:
-        number: 8090
+  rules:
+    - host: "foo.bar.com"
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/bar"
+            backend:
+              service:
+                name: python-simple-api
+                port:
+                  number: 80
