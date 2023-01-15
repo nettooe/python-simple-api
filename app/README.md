@@ -26,7 +26,8 @@ Se o servidor estiver rodando corretamente, esse comando deve retornar uma respo
 ```
 {
   "id": "1",
-  "codigo": "123"
+  "codigo": "123",
+  "host_response": "note-oliver"
 }
 ```
 
@@ -47,9 +48,9 @@ curl -H "codigo: 123" http://localhost:8282/hello/1
 ## Tagueando a imagem e publicando..
 
 ```
-docker tag python-simple-api nettooe/python-simple-api:1.0.0
+docker tag python-simple-api nettooe/python-simple-api:1.1.0
 ```
 
 ```
-docker push nettooe/python-simple-api:1.0.0
+docker push nettooe/python-simple-api:1.1.0
 ```
