@@ -30,14 +30,14 @@ spec:
   - protocol: TCP
     port: 80  
     targetPort: 8000
-  type: LoadBalancer
-  clusterIP: 10.43.119.38
-  clusterIPs:
-    - 10.43.119.38
-  sessionAffinity: None
-  externalTrafficPolicy: Cluster
-  ipFamilies:
-    - IPv4
-  ipFamilyPolicy: PreferDualStack
-  allocateLoadBalancerNodePorts: true
-  internalTrafficPolicy: Cluster
+#  type: LoadBalancer
+#  clusterIP: 10.43.119.38
+#  clusterIPs:
+#    - 10.43.119.38
+#  sessionAffinity: None
+#  externalTrafficPolicy: Cluster
+#  ipFamilies:
+#    - IPv4
+#  ipFamilyPolicy: PreferDualStack
+#  allocateLoadBalancerNodePorts: true
+#  internalTrafficPolicy: Cluster
