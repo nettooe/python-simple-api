@@ -31,6 +31,9 @@ spec:
     port: 80  
     targetPort: 8000
   type: LoadBalancer
+  clusterIP: 10.43.119.38
+  clusterIPs:
+    - 10.43.119.38
   sessionAffinity: None
   externalTrafficPolicy: Cluster
   ipFamilies:
